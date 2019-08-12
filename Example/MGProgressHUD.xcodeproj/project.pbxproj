@@ -42,7 +42,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		64D54F25DB80C4A86676F328 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		800B0D88526D2E11A8AED725 /* Pods_MGProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C5EE8DEF79173E23AA012CA /* MGProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MGProgressHUD.podspec; path = ../MGProgressHUD.podspec; sourceTree = "<group>"; };
+		8C5EE8DEF79173E23AA012CA /* MGProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MGProgressHUD.podspec; path = ../MGProgressHUD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		959454BE1FFF9F5700AAB07F /* failedHUD@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failedHUD@2x.png"; sourceTree = "<group>"; };
 		959454BF1FFF9F5700AAB07F /* successHUD@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successHUD@2x.png"; sourceTree = "<group>"; };
 		9F437F72D46AEBA19AC30EFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -219,10 +219,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RU85R33KSG;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RU85R33KSG;
 						LastSwiftMigration = 0910;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -233,6 +235,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -294,7 +297,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MGProgressHUD_Tests/Pods-MGProgressHUD_Tests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MGProgressHUD_Tests/Pods-MGProgressHUD_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -305,7 +308,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MGProgressHUD_Tests/Pods-MGProgressHUD_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGProgressHUD_Tests/Pods-MGProgressHUD_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6E6949197AAB64FAC6CCF365 /* [CP] Check Pods Manifest.lock */ = {
@@ -332,7 +335,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MGProgressHUD_Example/Pods-MGProgressHUD_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MGProgressHUD_Example/Pods-MGProgressHUD_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MGProgressHUD/MGProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -341,7 +344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MGProgressHUD_Example/Pods-MGProgressHUD_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGProgressHUD_Example/Pods-MGProgressHUD_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -498,12 +501,13 @@
 			baseConfigurationReference = CA435455D9F267299CA82C40 /* Pods-MGProgressHUD_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RU85R33KSG;
 				INFOPLIST_FILE = MGProgressHUD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -512,12 +516,13 @@
 			baseConfigurationReference = A2A7151D9D0FE80CF8F67C00 /* Pods-MGProgressHUD_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RU85R33KSG;
 				INFOPLIST_FILE = MGProgressHUD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -525,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F93E419D5E3DDBCEB4592649 /* Pods-MGProgressHUD_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RU85R33KSG;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -543,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5F27473141BE315029822A8 /* Pods-MGProgressHUD_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RU85R33KSG;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

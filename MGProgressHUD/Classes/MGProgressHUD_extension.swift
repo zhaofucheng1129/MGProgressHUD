@@ -9,9 +9,9 @@
 import UIKit
 
 public extension MGProgressHUD {
-    @available(*, deprecated:2.1.11, message:"不推荐使用，请使用iconImage:UIImage")
+    @available(*, deprecated, message:"不推荐使用，请使用iconImage:UIImage")
     @discardableResult
-    public class func showView(_ toView:UIView?,
+    class func showView(_ toView:UIView?,
                                icons:[String]?,
                                message:String?,
                                messageColor:UIColor?,
@@ -22,7 +22,7 @@ public extension MGProgressHUD {
      
         var iconImages: [UIImage]?
         if let `icons` = icons {
-            iconImages = icons.flatMap({ (imageName) -> UIImage? in
+            iconImages = icons.compactMap({ (imageName) -> UIImage? in
                 return UIImage(named: imageName)
             })
         }
@@ -37,9 +37,9 @@ public extension MGProgressHUD {
                         loationMode: loationMode)
     }
     
-    @available(*, deprecated:2.1.11, message:"不推荐使用，请使用iconImage:UIImage")
+    @available(*, deprecated, message:"不推荐使用，请使用iconImage:UIImage")
     @discardableResult
-    @objc public class func  showView(_ toView:UIView!,
+    @objc class func  showView(_ toView:UIView!,
                                 icon:String?,
                                 message:String?,
                                 messageColor:UIColor?,
@@ -57,10 +57,10 @@ public extension MGProgressHUD {
                         detailColor: detailColor)
     }
 
-    @available(*, deprecated:2.1.11, message:"不推荐使用，请使用iconImage:UIImage")
+    @available(*, deprecated, message:"不推荐使用，请使用iconImage:UIImage")
     /*! 扩展方法 */
     @discardableResult
-    @objc public class func  showView(_ toView:UIView!,
+    @objc class func  showView(_ toView:UIView!,
                                 icon:String?,
                                 message:String?,
                                 detailText:String?) ->MGProgressHUD? {
@@ -73,10 +73,10 @@ public extension MGProgressHUD {
                         detailColor: nil)
     }
     
-    @available(*, deprecated:2.1.11, message:"不推荐使用，请使用iconImage:UIImage")
+    @available(*, deprecated, message:"不推荐使用，请使用iconImage:UIImage")
     /*! 扩展方法 */
     @discardableResult
-    @objc public class func  showFillView(_ toView:UIView!,
+    @objc class func  showFillView(_ toView:UIView!,
                                     icon:String?,
                                     message:String?,
                                     detailText:String?) ->MGProgressHUD? {
@@ -90,9 +90,9 @@ public extension MGProgressHUD {
         return progressView
     }
     
-    @available(*, deprecated:2.1.11, message:"不推荐使用，请使用iconImage:UIImage")
+    @available(*, deprecated, message:"不推荐使用，请使用iconImage:UIImage")
     @discardableResult
-    @objc public class func  showFillViewAndCallBack(_ toView:UIView!,
+    @objc class func  showFillViewAndCallBack(_ toView:UIView!,
                                                icon:String?,
                                                message:String?,
                                                detailText:String?,
@@ -108,9 +108,9 @@ public extension MGProgressHUD {
         return progressView
     }
     
-    @available(*, deprecated:2.1.11, message:"不推荐使用，请使用iconImage:UIImage")
+    @available(*, deprecated, message:"不推荐使用，请使用iconImage:UIImage")
     @discardableResult
-    @objc public class func showSuccessAndHiddenView(_ toView:UIView!,
+    @objc class func showSuccessAndHiddenView(_ toView:UIView!,
                                                icon:String?,
                                                message:String?,
                                                detailText:String?) ->MGProgressHUD? {

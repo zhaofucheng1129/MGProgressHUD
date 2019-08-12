@@ -27,8 +27,8 @@ func MGAttributedString(_ label:UILabel,text:String?,lineSpacing:CGFloat) -> NSA
         style.paragraphSpacingBefore = 0.0
         style.firstLineHeadIndent = 0.0
         string.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: text!.count))
-        string.addAttribute(.font, value: label.font, range: NSRange(location: 0, length: text!.count))
-        string.addAttribute(.foregroundColor, value: label.textColor, range: NSRange(location: 0, length: text!.count))
+        string.addAttribute(.font, value: label.font as Any, range: NSRange(location: 0, length: text!.count))
+        string.addAttribute(.foregroundColor, value: label.textColor as Any, range: NSRange(location: 0, length: text!.count))
         return string
     }
     return nil
